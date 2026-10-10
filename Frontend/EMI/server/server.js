@@ -11,7 +11,12 @@ const PORT = process.env.PORT || 5001;
 
 app.use(
     cors({
-        origin: ["http://localhost:5173", "http://localhost:5174"],
+        origin: [
+            "http://localhost:5173",
+            "http://localhost:5174",
+            "https://emi-loan-planner-lota.vercel.app",
+            "https://emi-loan-planner-git-main-krapali-02s-projects.vercel.app",
+        ],
     })
 );
 
